@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.io7m.primogenitor</groupId>
+    <artifactId>com.io7m.primogenitor.full</artifactId>
+    <version>8.0.0-beta0001</version>
+  </parent>
+
+  <groupId>com.io7m.bugs</groupId>
+  <artifactId>surefire</artifactId>
+  <version>20231015</version>
+  <packaging>pom</packaging>
+
+  <description>Bug!</description>
+  <name>surefire</name>
+  <url>https://www.github.com/io7m/surefire-20231015</url>
+
+  <modules>
+    <module>core</module>
+    <module>tests</module>
+  </modules>
+
+  <properties>
+    <enforcer.skip>true</enforcer.skip>
+    <checkstyle.skip>true</checkstyle.skip>
+    <mdep.analyze.skip>true</mdep.analyze.skip>
+
+    <io7m.api.previousVersion>20231015</io7m.api.previousVersion>
+    <io7m.java.requiredSDKBuildVersion>[21,22)</io7m.java.requiredSDKBuildVersion>
+    <io7m.java.targetJavaVersion>20</io7m.java.targetJavaVersion>
+  </properties>
+
+</project>
